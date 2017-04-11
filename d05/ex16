@@ -28,4 +28,5 @@ char *ft_strcat(char *dest, char *src)
 		src++;
 	}
 	dest[a] = '\0';
+	return (dest);
 }
