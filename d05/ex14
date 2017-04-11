@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int		ft_str_is_lowercase(char *str)
+{
+	int a;
+	int b;
+
+	a = 0;
+	while (str[a] != '\0')
+
+			 {
+				 if (str[a] >= 'A' && str[a] <= 'Z')
+				 {
+					 b = 1;
+				 }
+				 else
+				 {
+					 return(0);
+				 }
+				 a++;
+			 }
+	return(b);
+}
