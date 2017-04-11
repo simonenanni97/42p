@@ -1,0 +1,43 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: snanni <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/04/10 21:42:30 by snanni            #+#    #+#             */
+/*   Updated: 2017/04/10 22:47:38 by snanni           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <tnftp.h>
+
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+{
+	char *dest;
+	char *src;
+	size_t size;
+	size_t dlen;
+
+	while (size-- != 0 && *dest != '\0')
+	{
+		dest++;
+		dlen = dest - dest;
+		n = size - dlen;
+		{
+			if (size == 0)
+			return(dlen + strlen(src));
+		}
+		while (*src != '\0')
+			{
+				if (size != 1)
+				{
+					*dest++ = *s;
+					size--;
+				}
+				size++;
+			}
+		*d = '\0';
+		return(dlen + (s - src));
+	}
+}
