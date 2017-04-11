@@ -12,12 +12,30 @@
 
 #include <stdio.h>
 
-intmain (int argc, char **argv)
+void	ft_putchar(char c);
+
+void	ft_print_param(char *str)
 {
-	if (argc == 3)
+	int a;
+
+	a = 0;
+	while (str[a] != '\0')
 	{
-		ft_putstr(argv[3]);
+		ft_putchar(str[a]);
+		a++;
 	}
 	ft_putchar('\n');
+}
+
+int		main(int argc, char **argv)
+{
+	int	a;
+
+	a = 1;
+	while (a < argc)
+	{
+		ft_print_param(argv[a]);
+		a++;
+	}
 	return (0);
 }
