@@ -17,15 +17,13 @@ char *ft_strcat(char *dest, char *src)
 
 	a = 0;
 	while (dest[a] != '\0')
-	{
 		a++;
-	}
 	b = 0;
-	while (src[a] != '\0')
+	while (src[a] != '\0' && j < nb)
 	{
 		dest[a] = src[b];
-		dest++;
-		src++;
+		a++;
+		b++;
 	}
 	dest[a] = '\0';
 	return (dest);
