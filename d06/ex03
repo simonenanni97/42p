@@ -9,3 +9,32 @@
 /*   Updated: 2017/04/11 10:05:46 by snanni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int		ft_putchar(char c);
+
+void	ft_putstr(char *str)
+{
+	int a;
+
+	a = 0;
+	while (str[a] != '\0')
+	{
+		ft_putchar(str[a]);
+		a++;
+	}
+	ft_putchar('\n');
+	return ;
+}
+
+int		main(int argc, char **argv)
+{
+	int a;
+
+	a = argc - 1;
+	while (a >= 1)
+	{
+		ft_putstr(argv[a]);
+		a--;
+	}
+	return (0);
+}
