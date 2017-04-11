@@ -15,20 +15,13 @@
 intft_str_is_alpha(char *str)
 {
 	int a;
-	int b;
 
 	a = 0;
 	while (str[a] != '\0')
 	{
 		if (str[a] < 32 || str[a] == 127)
-		{
-			b = 1;
-		}
-		else
-		{
 			return(0);
-		}
 		a++;
 	}
-	return(b);
+	return(1);
 }
