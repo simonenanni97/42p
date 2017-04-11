@@ -12,20 +12,19 @@
 
 char	*ft_strncat(char *dest, char *src, int nb)
 {
-		int a;
-		int b;
+	int	a;
+	int	b;
 
-		a = 0;
-		while (a < nb && != '\0')
-		{
-			a++;
-		}
-		b = 0;
-		while (a < nb)
-		{
-			dest[a] = src[b];
-			dest++;
-			src++;
-		}
-		dest[a] = '\0';
+	a = 0;
+	while (dest[a] != '\0')
+		a++;
+	b = 0;
+	while (src[b] != '\0' && b < nb)
+	{
+		dest[a] = src[b];
+		a++;
+		b++;
+	}
+	dest[a] = '\0';
+	return (dest);
 }
