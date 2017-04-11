@@ -13,18 +13,21 @@
 unsigned int ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	{
-		char *d = dst;
-		const char *s = src;
-		size_t n = siz;
-
+		char *d;
+		const char *s;
+		size_t n;
+		
+		d = dst;
+		s = src;
+		n = size;
 		if (n != 0 && --n != 0)
 		{
-			if ((*d++ = *s++) == 0)
+			if ((*d++ = *s++) == '\0')
 		}
 		while (--n != 0);
 		if (n == 0)
 		{
-			if (siz != 0)
+			if (n != 0)
 				*d = '\0';
 			while (*s++);
 		}
