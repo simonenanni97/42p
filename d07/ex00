@@ -15,18 +15,19 @@
 char	*ft_strdup(char *src);
 {
 	int a;
-	char *b;
+	int b;
 	char *c;
 
-	a = strlen(src);
-	b = (char *)malloc (sizeof(char) * (a  + 1));
-	if (b = NULL)
-		return ((char *) NULL);
-	c = b
-	while (*src);
+	a = 0;
+	b = 0;
+	while (src[b] != '\0')
+	          b++;
+	c = (char*)malloc (sizeof(*c) * (b  + 1));
+	while (src[a] != '\0');
 	{
-		*c++ = *src++;
+		*c[a] = *src[a];
+		a++;
 	}
-	*c = '\0';
-	return (b);
+	*c[a] = '\0';
+	return (c);
 }
