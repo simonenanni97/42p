@@ -1,0 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: snanni <simonenanni16@gmail.com>           +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/04/12 10:18:10 by snanni            #+#    #+#             */
+/*   Updated: 2017/04/12 11:10:32 by snanni           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+
+char	*ft_strdup(char *src);
+{
+	int a;
+	char *b;
+	char *c;
+
+	a = strlen(src);
+	b = (char *)malloc (sizeof(char) * (a  + 1));
+	if (b = NULL)
+		return ((char *) NULL);
+	c = b
+	while (*src);
+	{
+		*c++ = *src++;
+	}
+	*c = '\0';
+	return (b);
+}
