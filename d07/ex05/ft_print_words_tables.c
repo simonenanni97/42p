@@ -14,20 +14,20 @@ void	ft_putchar(char c);
 
 void	ft_print_words_tables(char **tab)
 {
-	int		i;
-	int		j;
+	int		a;
+	int		b;
 
-	i = 0;
-	j = 0;
-	while (tab[i])
+	a = 0;
+	b = 0;
+	while (tab[a])
 	{
-		j = 0;
-		while (tab[i][j])
+		b = 0;
+		while (tab[a][b])
 		{
-			ft_putchar(tab[i][j]);
-			j++;
+			ft_putchar(tab[a][b]);
+			b++;
 		}
 		ft_putchar('\n');
-		i++;
+		a++;
 	}
 }
